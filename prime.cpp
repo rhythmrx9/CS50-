@@ -6,7 +6,7 @@ int main() {
     int n;
     cin>>n;
     int i;
-    for(int i=2;i,n,i=++;){
+    for(int i=2;i,n,i=++){
         if(n%i==0){
             cout<<"Non prime"<<endl;
             break;
