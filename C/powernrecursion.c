@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 int power(int n1, int n2);
-int main() {
+int main() 
+{
     int base, a, result;
     printf("Enter base number: ");
     scanf("%d", &base);
