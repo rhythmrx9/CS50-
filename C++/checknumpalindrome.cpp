@@ -25,7 +25,7 @@ int main()
      if (n == rev)
          cout << " The number is a Palindrome.";
      else
-         cout << " The number is not a pPalindrome.";
+         cout << " The number is not a Palindrome.";
 
 cout<<endl;
 
