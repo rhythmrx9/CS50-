@@ -15,15 +15,36 @@ int main()
 
     int i=0;
     int currentlength = 0, maxlength = 0;
+    int stword = 0, maxword =0;
 
     while(1)
     {
-        if(arr[i]== ' ||')
-        if(arr[i]== '/0')
-            break;
+        if(arr[i]== ' ' || arr[i] == '\0')
+        {
+            if(currentlength > maxlength)
+            {
+                maxlength = currentlength;
+                maxword = stword;
+            }
 
-        i++
+            currentlength = 0;
+            stword = i+1;
+        }
+
+        else
+        currentlength++;
+        if(arr[i]== '\0')
+        {
+            break;
+        }
+        i++;
     }
 
+    cout << maxlength << endl;
+    for (int i=0; i<maxlength; i++)
+    {
+        cout << arr[i + maxword];
+    }
 
+    return 0;
 }
