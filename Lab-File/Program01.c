@@ -1,6 +1,7 @@
 // Program 1: Program to know the number of bytes of data type contains
 
 #include<stdio.h>
+
 int main()
 
 {
