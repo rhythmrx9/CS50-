@@ -1,16 +1,17 @@
-#include<stdio.h>
+#include <iostream>
+using namespace std;
     
 void main()
 {
     int l,t,i;
-    scanf("%d",&t);
+    cin>>t;
     
     while(t--)
     {
-        char s[100000];
+        string s;
         int count=0;
-        scanf("%s",s);
-        l=strlen(s);
+        cin>>s;
+        l=s.length();
     
         for(i=0;i<l;i++)
         {
