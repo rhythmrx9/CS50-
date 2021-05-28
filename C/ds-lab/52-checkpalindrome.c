@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define SIZE 100
+#define SIZE 300
 
 int main()
 {
@@ -27,11 +27,11 @@ int main()
     
     if (flag) 
     {
-        printf("%s is not a palindrome", string1);
+        printf("%s is not a palindrome\n", string1);
     }    
     else 
     {
-        printf("%s is a palindrome", string1);
+        printf("%s is a palindrome\n", string1);
     }
 
     return 0;
