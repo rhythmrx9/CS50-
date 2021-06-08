@@ -6,3 +6,8 @@ struct node
   int element;
   struct node *next;
 };
+
+int main()
+{
+  
+}
