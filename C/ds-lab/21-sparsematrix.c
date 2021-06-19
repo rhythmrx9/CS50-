@@ -1,4 +1,4 @@
-// Lab-2 Program 1: Write a C program to check whether a matrix is sparse Matrix. Convert the Sparse matrix into its standard form.
+// Lab 2 Program 1 : Write a C program to check whether a matrix is sparse Matrix. Convert the Sparse matrix into its standard form.
 
 #include <stdio.h>
 
