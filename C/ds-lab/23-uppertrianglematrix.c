@@ -1,4 +1,4 @@
-// Lab-2 Program 2: Write a C Program to find whether a Matrix is Upper Triangular Matrix
+// Lab 2 Program 2 : Write a C Program to find whether a Matrix is Upper Triangular Matrix
 
 int main ()
 {
