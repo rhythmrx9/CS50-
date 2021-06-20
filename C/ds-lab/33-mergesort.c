@@ -1,4 +1,4 @@
-// Lab-3 Program 2:Write a C program to implement Merge Sort
+// Lab 3 Program 2 : Write a C program to implement Merge Sort
 
 #include <stdio.h>
 
