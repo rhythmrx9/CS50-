@@ -1,4 +1,4 @@
-// Lab-3 Program 1: Write a program to implement Selection sort
+// Lab 3 Program 1 : Write a program to implement Selection sort
 
 #include <stdio.h>
 
