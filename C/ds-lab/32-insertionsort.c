@@ -1,4 +1,4 @@
-// Lab-3 Program 2: Write a C program to implement Insertion Sort
+// Lab 3 Program 2 : Write a C program to implement Insertion Sort
 
 #include <stdio.h>
 
