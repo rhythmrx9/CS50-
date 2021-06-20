@@ -1,4 +1,4 @@
-// Lab-2 Program 5: How do you apply bubble sort on sorted arrays. Make the sorting algorithm efficient by doing necessary changes in the algorithm and implement the same.
+// Lab 2 Program 5 : How do you apply bubble sort on sorted arrays. Make the sorting algorithm efficient by doing necessary changes in the algorithm and implement the same.
 
 #include <stdio.h>
 
