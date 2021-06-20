@@ -1,3 +1,5 @@
+// Lab 4 Program 1 : C Program to Implement Quick sort
+
 #include <stdio.h>
 
 void swap(int *a, int *b);
