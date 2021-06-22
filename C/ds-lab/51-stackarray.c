@@ -1,4 +1,4 @@
-// Lab 5: Program 1 - Write a C Program to implement stack using an Array
+// Lab 5 Program 1 : Write a C Program to implement stack using an Array
 
 #include <stdio.h>
 #include <stdlib.h>
