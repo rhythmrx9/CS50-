@@ -1,4 +1,4 @@
-// Lab 5 : Program 2 - Write a C Program to check whether the string input is a palindrome or not.
+// Lab 5 Program 2 : Write a C Program to check whether the string input is a palindrome or not.
 
 #include <stdio.h>
 #include <string.h>
