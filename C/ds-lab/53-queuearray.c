@@ -1,4 +1,4 @@
-// Lab 5 : Program 3- Implement the concept of Queues using arrays
+// Lab 5 Program 3 : Implement the concept of Queues using arrays
 
 #include <stdio.h>
 
