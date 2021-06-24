@@ -1,4 +1,4 @@
-// Lab 5 : Program 4
+// Lab 5 Program 4 : Write a C program to implement circular queue concept
 
 #include <stdio.h>
 #include <stdlib.h>
