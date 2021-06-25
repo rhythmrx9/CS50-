@@ -1,3 +1,5 @@
+// Lab 7 Program 1 : Implement the concept of stack using Linked List
+
 #include <stdio.h>  
 #include <stdlib.h>  
 
