@@ -1,3 +1,5 @@
+// Lab 6 Program 1 : C Program to Insert the elements in Linked list
+
 #include <stdio.h>
 #include <stdlib.h>
 
