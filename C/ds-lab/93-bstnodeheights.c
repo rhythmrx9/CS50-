@@ -3,61 +3,71 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct node {
-	int data;
-	struct node* left;
-	struct node* right;
+struct node{
+int data;
+struct node *l;
+struct node *r;
 };
 
-
-int MaxHeight(struct node *node)
+struct node *root=NULL;
+int b_factor=0;
+struct node* insert_data(struct node *s_r,int data)
 {
-	if (node == NULL)
-		return 0;
-	else 
-    {
-		// compute the height of each subtree 
-		int lDepth = MaxHeight(node->left);
-		int rDepth = MaxHeight(node->right);
-
-        if (lDepth > rDepth)
-			return (lDepth + 1);
-		else
-			return (rDepth + 1);
-	}
+	if(s_r==NULL){
+	struct node *temp=(struct node*)(malloc(sizeof(struct node)));
+	temp->data=data;
+	temp->l=NULL;
+	temp->r=NULL;
+	printf("%d insert_dataed\n",temp->data);
+	return temp;
+}
+	if(s_r->data>data)
+	s_r->l=insert_data(s_r->l,data);
+	
+	else if(s_r->data<data)
+	s_r->r=insert_data(s_r->r,data);
+	
+	return s_r;
 }
 
-
-struct node* newNode(int data)
+int height(struct node *n)
 {
-	struct node* node
-		= (struct node*)malloc(sizeof(struct node));
-	node->data = data;
-	node->left = NULL;
-	node->right = NULL;
+	if(n==NULL)
+	return 1;
 
-	return (node);
+	int l_h=height(n->l);
+	int r_h=height(n->r);
+
+	printf("Balancing Factor for %d is %d\n",n->data,abs(l_h-r_h));
+	if(l_h>r_h)
+	printf("Height of %d is %d\n",n->data,l_h);
+
+	else
+	printf("Height of %d is %d\n",n->data,r_h);
+
+	if(l_h>r_h)
+	return l_h+1;
+
+	else
+	return r_h+1;
 }
 
 int main()
 {
-    struct node *root = NULL;
-
-    int i,a,b,n;
-
-    printf("Enter Number of elements to be inserted: ");
-    scanf("%d",&n);
-
-    printf("Enter the elements: ");
-
-    for(i=0;i<n;i++)
-    {
-        scanf("%d",&a);
-        root = newNode(a);
-    }
-
-
-	printf("Height of tree is %d\n", MaxHeight(root));
-
+	int num,data,ch;
+	printf("Enter number of elements\n");
+	scanf("%d",&num);
+	printf("Enter the data\n");
+	for(int i=1;i<=num;i++){
+	scanf("%d",&data);
+	root=insert_data(root,data);
+	}
+	printf("1.Press 1 to find height\n");
+	scanf("%d",&ch);
+	if (ch==1){
+	height(root);
+	}
+	else{
 	return 0;
+	}
 }
