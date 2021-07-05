@@ -3,29 +3,31 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-struct node 
+struct node
 {
-  int element;
-  struct node *next;
+int data;
+struct node *link;
 };
-
-void insert()
-{
-    struct node* temp;
-    temp = (struct node*) malloc(sizeof(struct node));
-
-    printf("enter the data");
-    scanf("%d", &temp->element);
-
-    temp->next=NULL;
-
-    
-}
 
 int main()
 {
+//malloc stored head address
+struct node *head=(struct node*)malloc(sizeof(struct node));
+head->data=45;
+// NULL will be address of link now
+head->link=NULL; 
 
+struct node *current=(struct node*)malloc(sizeof(struct node));
+ 
+current->data=37;
+head->link=current;
+current->link=NULL;
+current=(struct node*)malloc(sizeof(struct node));
+current->data=43;
+current->link=NULL;
+head->link->link=current;
+  
+printf("3rd data is : %d",head->link->link->data);
 
-  return 0;
+return 0;
 }
-
