@@ -1,5 +1,7 @@
 // Lab 2 Program 2 : Write a C Program to find whether a Matrix is Lower Triangular Matrix
 
+#include<stdio.h>
+
 int main ()
 {
     int matrix[10][10];
