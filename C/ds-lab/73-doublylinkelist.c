@@ -43,7 +43,7 @@ void insertAfter(struct Node* prev_node, int new_data)
 
 	prev_node->next = new_node;
 
-=	new_node->prev = prev_node;
+	new_node->prev = prev_node;
 
 	if (new_node->next != NULL)
 		new_node->next->prev = new_node;
