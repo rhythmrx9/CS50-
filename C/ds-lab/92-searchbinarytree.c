@@ -82,7 +82,7 @@ int main()
 {
     struct node *root = NULL;
 
-    int i,a,n;
+    int i,a,s,n;
 
     printf("Enter Number of elements to be inserted: ");
     scanf("%d",&n);
@@ -97,6 +97,11 @@ int main()
 
     inorder(root);
     printf("\n");
+
+    printf("Enter element to be searched: ");
+    scanf("%d",&s);
+
+    searchNode(root,s);
 
     return 0;
 }
