@@ -45,9 +45,9 @@ string getInfix(string exp)
 }
 
 // Driver code
-int main()
+void main()
 {
 	string exp = "BCD-*E/";
 	cout << getInfix(exp);
-	return 0;
+	
 }
